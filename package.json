@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "uwezo frontend app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwezosaccogroup/frontend.git"
+  },
+  "author": "group three",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uwezosaccogroup/frontend/issues"
+  },
+  "homepage": "https://github.com/uwezosaccogroup/frontend#readme"
+}
