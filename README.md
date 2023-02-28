@@ -1,3 +1,4 @@
+safari
 # UWEZO SACCO GROUP
 
 # Introduction
@@ -10,3 +11,4 @@ uwazo sacco group is a frontend application that is created by a team of fronten
 This is where the user interface of our application resides in. Coded with ReactJS and JS enabling technologies.
 
 # Problem Statement
+
