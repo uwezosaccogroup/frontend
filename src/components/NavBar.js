@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
-import logo from "../logo.ico"
-import NavBar from "react-bootstrap/Navbar"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NavLink } from "react-router-dom"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 
-const Header = () => (
+const NavBar = () => (
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid p-2 bd-highlight">
-        <a class="navbar-brand" href="#">
-          Uwezo Sacco Group
+        <a class="navbar-brand" href="/">
+          <FontAwesomeIcon icon={faUser} className="navbar-brand" />
         </a>
         <button
           class="navbar-toggler"
@@ -24,17 +25,17 @@ const Header = () => (
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="/deposit">
                 Deposit
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="/withdraw">
                 Withdraw
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="/savings">
                 Savings
               </a>
             </li>
@@ -45,4 +46,4 @@ const Header = () => (
   </header>
 )
 
-export default Header
+export default NavBar
