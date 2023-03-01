@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border: none;
+  border-radius: 10px;
+  width: 275px;
+  margin-top: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fa-ellipsis-v {
+  font-size: 10px;
+  color: #c2c2c4;
+  margin-top: 6px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-bottom {
+  background: #3e454d;
+  border-radius: 6px;
+}
+.flex-column {
+  color: #adb5bd;
+  font-size: 13px;
+}
+.flex-column p {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.btn-secondary {
+  height: 40px !important;
+  margin-top: 3px;
+}
+.btn-secondary:focus {
+  box-shadow: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
