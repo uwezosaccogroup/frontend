@@ -17,9 +17,6 @@ const Profile = () => {
                 &#36; <span class="text-white">88,989</span>
               </p>
             </div>
-            <button class="btn btn-secondary">
-              <i class="fas fa-arrow-right text-white"></i>
-            </button>
           </div>
         </div>
         <div class="card-bottom pt-3 px-3 mb-2">
@@ -30,9 +27,6 @@ const Profile = () => {
                 &#36; <span class="text-white">100,000,989</span>
               </p>
             </div>
-            <button class="btn btn-secondary">
-              <i class="fas fa-arrow-right text-white"></i>
-            </button>
           </div>
         </div>
       </div>

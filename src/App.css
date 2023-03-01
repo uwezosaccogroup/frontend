@@ -46,3 +46,21 @@
 a.navbar-brand {
   margin-left: 25px;
 }
+#curramount {
+  width: 240px;
+}
+#amountDeposit {
+  font-size: 12px;
+}
+.submit {
+  width: 100px;
+  margin-top: 26px;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+a.navbar-brand .fos-brand {
+  font-size: 24px;
+}

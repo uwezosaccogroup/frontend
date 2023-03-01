@@ -9,7 +9,8 @@ const NavBar = () => (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid p-2 bd-highlight">
         <a class="navbar-brand" href="/">
-          <FontAwesomeIcon icon={faUser} className="navbar-brand" />
+          <FontAwesomeIcon icon={faUser} className="navbar-brand fos-brand" />
+          Dashboard
         </a>
         <button
           class="navbar-toggler"
