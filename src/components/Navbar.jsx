@@ -4,13 +4,14 @@ import axios from 'axios';
 import { useSelector } from "react-redux";
 
 
+
 function Navbar() {
   const [aboutData, setAboutData] = useState({});
   const state = useSelector((state)=> state.handleCart)
 
   useEffect(() => {
     axios
-      .get("")
+      .get("   ")
       .then((res) => {
         setAboutData(res.data);
       })
@@ -43,18 +44,16 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/">
-                All Players
+                Home
               </NavLink>
             </li>
-            <li className="nav-link">
-              
-            </li>
+           
             <NavLink className="nav-link" to="/about">
 
                 About
               </NavLink>
-            <NavLink className="nav-link" to="/newplayer">
-                Add Player
+            <NavLink className="nav-link" to="/services">
+                services
               </NavLink>
             <li className="nav-item">
             <p>{aboutData.title}</p>
