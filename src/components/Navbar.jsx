@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , BrowserRouter, Route, Switch } from "react-router-dom";
 import axios from 'axios';
 import { useSelector } from "react-redux";
 
@@ -8,17 +8,17 @@ import { useSelector } from "react-redux";
 function Navbar() {
   const [aboutData, setAboutData] = useState({});
   const state = useSelector((state)=> state.handleCart)
-
+  const [count, setCount] = useState(0);
   useEffect(() => {
     axios
-      .get("   ")
+      .get(" https://example.com/about ")
       .then((res) => {
         setAboutData(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [state.handleCart]);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
