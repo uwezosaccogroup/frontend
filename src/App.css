@@ -1,109 +1,66 @@
-.App {
-  text-align: center;
-}
-.my-app{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://free4kwallpapers.com/uploads/originals/2019/09/29/a-financial-district-wallpaper.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: whitesmoke;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.home-section {
-  position: relative;
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url('https://www.cdotrends.com/sites/default/files/iStock-1052990146.jpeg') no-repeat center center;
-  background-size: cover;
-  width: 90%;
-  margin-left: 60px;
-  height: 1000px;
-
-}
-
-.home-section .overlay {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding: 1em;
-}
-
-#section1{
-  margin-left: 0px;
-
-}
-.about-container{
-  
-  background-color: #fff;
-  padding: 50px;
-  color: black;
-  position: relative;
-  width: 100%;
-
-}
-.services-container{
-  color: whitesmoke;
-}
-
-.faq-section {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.faq-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.ui.accordion {
-  width: 100%;
+.card {
   border: none;
-  box-shadow: none;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 20%;
 }
 
-.ui.accordion .title {
-  font-size: 1.2rem;
-  color: #333;
-  background-color: #f7f7f7;
-  padding: 1rem;
-  border: 1px solid #e7e7e7;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
+.fa-ellipsis-v {
+  font-size: 10px;
+  color: #c2c2c4;
+  margin-top: 6px;
   cursor: pointer;
 }
-
-.ui.accordion .active.title {
-  background-color: #fff;
+.text-dark {
+  margin-top: 0px;
 }
 
-.ui.accordion .content {
-  font-size: 1.1rem;
-  color: #666;
-  padding: 1rem;
-  border: 1px solid #e7e7e7;
-  border-top: none;
-  border-radius: 0 0 0.25rem 0.25rem;
-  background-color: #fff;
+.text-dark p {
+  line-height: 16px;
 }
-
-.footer-container {
-  background-color: black ;
-  padding: 30px;
-
+.card-bottom {
+  background: #3e454d;
+  border-radius: 6px;
 }
-
-.footer-row {
-  margin-bottom: 20px;
+.flex-column {
+  color: #adb5bd;
+  font-size: 13px;
 }
-
-h4 {
-  margin-bottom: 20px;
+.flex-column p {
+  letter-spacing: 1px;
+  font-size: 18px;
 }
-.signup-title{
-  text-align: center;
+.btn-secondary {
+  height: 40px !important;
+  margin-top: 3px;
 }
-
-@media only screen and (max-width: 767px) {
-  .footer-row {
-    margin-bottom: 0;
-  }
+.btn-secondary:focus {
+  box-shadow: none;
+}
+a.navbar-brand {
+  margin-left: 25px;
+}
+#curramount {
+  width: 240px;
+}
+#amountDeposit {
+  font-size: 12px;
+}
+.submit {
+  width: 100px;
+  margin-top: 26px;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+a.navbar-brand .fos-brand {
+  font-size: 24px;
 }
