@@ -42,16 +42,12 @@ const Signup = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // insert form data into database here
     const endpoint = "https://localhost:9292/users/";
-    const form = event.target;
-    const formData = new FormData(form);
-    postData(formData, endpoint)
-      .then(response => {
-        console.log(response);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    const formData = postData(formData, endpoint);
+    console.log(formData);
+
+
   };
   const handleDropdownChange = (e, { value }) => {
     setFormData({ ...formData, accountType: value });
