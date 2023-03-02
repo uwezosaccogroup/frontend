@@ -1,5 +1,13 @@
-import React from 'react';
-import { Container, Grid, Icon, Input, Form, TextArea, Button } from 'semantic-ui-react';
+import React from "react";
+import {
+  Container,
+  Grid,
+  Icon,
+  Input,
+  Form,
+  TextArea,
+  Button,
+} from "semantic-ui-react";
 
 const Footer = () => {
   return (

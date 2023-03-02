@@ -1,13 +1,10 @@
-import React from 'react';
-import '../App.css';
-import { Card, Container,  Grid, Image } from 'semantic-ui-react';
+import React from "react";
+import { Card, Container, Grid, Image } from "semantic-ui-react";
 
-
-
-const Services = () =>{
-    return(
-        <div id='section2' className='bg-dark' >
-        <Container textAlign="center" className='services-container'>
+const Services = () => {
+  return (
+    <div id="section2" className="bg-dark">
+      <Container textAlign="center" className="services-container">
         <h1>Our Services</h1>
         <Grid columns={3} stackable>
           <Grid.Column>
@@ -16,7 +13,9 @@ const Services = () =>{
               <Card.Content>
                 <Card.Header>Savings</Card.Header>
                 <Card.Description>
-                 Building savings is an important step towards achieving financial stability, and we provide  our members with the resources they need to save and invest wisely.
+                  Building savings is an important step towards achieving
+                  financial stability, and we provide our members with the
+                  resources they need to save and invest wisely.
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -27,7 +26,9 @@ const Services = () =>{
               <Card.Content>
                 <Card.Header>Deposit</Card.Header>
                 <Card.Description>
-                We provide our members with a safe and secure place to deposit their funds, knowing that their money is protected by strong financial controls and regulations.
+                  We provide our members with a safe and secure place to deposit
+                  their funds, knowing that their money is protected by strong
+                  financial controls and regulations.
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -38,17 +39,17 @@ const Services = () =>{
               <Card.Content>
                 <Card.Header>Withdraw</Card.Header>
                 <Card.Description>
-                We offer withdrawal services which involves establishing a system  through which members can withdraw their funds or savings from their accounts.
+                  We offer withdrawal services which involves establishing a
+                  system through which members can withdraw their funds or
+                  savings from their accounts.
                 </Card.Description>
               </Card.Content>
             </Card>
           </Grid.Column>
         </Grid>
       </Container>
-      </div>
-      
-    );
-}
-
+    </div>
+  );
+};
 
 export default Services;

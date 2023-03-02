@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Form, Grid, Segment, Dropdown } from "semantic-ui-react";
-import "../App.css";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +45,7 @@ const Signup = () => {
     const formData = postData(formData, endpoint);
     console.log(formData);
   };
-  
+
   const handleDropdownChange = (e, { value }) => {
     setFormData({ ...formData, accountType: value });
   };
