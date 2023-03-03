@@ -30,15 +30,15 @@ const ProfileForm = () => {
   return (
     <div class="container d-flex justify-content-center">
   <div class="card p-3">
-    <h4 id="user-name">name</h4>
+    <h4 id="user-name"></h4>
     <div class="text-dark">
-      <p id="user-email">email</p>
-      <p id="user-phone">phone</p>
-      <p id="user-occupation">occupation</p>
-      <p id="user-location">location</p>
-      <p id="account-type">account-type</p>
-      <p id="next-of-kin">next of kin</p>
-      <p id="next-of-kin-phone">next of kin n.</p>
+      <p id="user-email"></p>
+      <p id="user-phone"></p>
+      <p id="user-occupation"></p>
+      <p id="user-location"></p>
+      <p id="account-type"></p>
+      <p id="next-of-kin"></p>
+      <p id="next-of-kin-phone"></p>
     </div>
     <br></br>
     <div class="card-bottom pt-3 px-3 mb-2">

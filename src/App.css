@@ -183,7 +183,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 150px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -225,7 +225,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 150px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -267,7 +267,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 150px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -282,9 +282,7 @@ h4 {
   font-size: 1.5em;
   margin-bottom: 20px;
   }
-  #savings-container label{
-    
-  }
+
   
   #savings-container form {
   display: flex;
