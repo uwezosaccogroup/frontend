@@ -35,6 +35,23 @@ function Landing() {
       <Container text style={{ marginTop: "17em" }}>
         <Footer />
       </Container>
+
+      <style>
+        {`
+          @media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .my-app {
+              margin-top: 0;
+            }
+            #section1,
+            #section2,
+            #section3,
+            #section4 {
+              margin-top: 5em;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 }
