@@ -7,7 +7,7 @@ const NavBar = () => (
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid p-2 bd-highlight">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/dashboard/profile">
           <FontAwesomeIcon icon={faUser} className="navbar-brand fos-brand" />
           Dashboard
         </a>
@@ -25,17 +25,17 @@ const NavBar = () => (
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/deposit">
+              <a class="nav-link active" aria-current="page" href="/dashboard/deposit">
                 Deposit
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/withdraw">
+              <a class="nav-link active" aria-current="page" href="/dashboard/withdraw">
                 Withdraw
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/savings">
+              <a class="nav-link active" aria-current="page" href="/dashboard/savings">
                 Savings
               </a>
             </li>
