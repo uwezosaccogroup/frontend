@@ -194,6 +194,59 @@ a.navbar-brand .fos-brand {
   padding: 10px 20px;
   border-radius: 5px;
   }
+  .profile-container{
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+  .ui.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0.2, 0, 0.3);
+    padding: 2rem;
+  }
+  
+  .ui.card h4.header {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  
+  .ui.card p {
+    margin: 0.5rem 0;
+  }
+  
+  .ui.two.column.grid .column {
+    text-align: center;
+  }
+  
+  .ui.primary.button {
+    background-color: #2185d0;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .ui.button {
+    background-color: #fff;
+    color: #2185d0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  #current-balance,
+  #savings-balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #000;
+  }
+  
 
 
 /* THIS IS FOR LANDING PAGE */

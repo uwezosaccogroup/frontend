@@ -21,45 +21,42 @@ const ProfileForm = () => {
       document.getElementById('account-type').textContent = data.accountType;
       document.getElementById('next-of-kin').textContent = data.nextOfKin;
       document.getElementById('next-of-kin-phone').textContent = data.nextOfKinPhone;
-      document.getElementById('current-balance').innerHTML = `&#36; ${data.currentBalance} <span class="text-white"></span>`;
-      document.getElementById('savings-balance').innerHTML = `&#36; ${data.savingsBalance} <span class="text-white"></span>`;
+      document.getElementById('current-balance').innerHTML = `&#36; ${data.currentBalance} <span class="text-black"></span>`;
+      document.getElementById('savings-balance').innerHTML = `&#36; ${data.savingsBalance} <span class="text-black"></span>`;
     })
     .catch(error => {
       console.error("Error fetching data: ", error);
     });
   return (
-    <div class="container d-flex justify-content-center">
-  <div class="card p-3">
-    <h4 id="user-name"></h4>
-    <div class="text-dark">
-      <p id="user-email"></p>
-      <p id="user-phone"></p>
-      <p id="user-occupation"></p>
-      <p id="user-location"></p>
-      <p id="account-type"></p>
-      <p id="next-of-kin"></p>
-      <p id="next-of-kin-phone"></p>
-    </div>
-    <br></br>
-    <div class="card-bottom pt-3 px-3 mb-2">
-      <div class="d-flex flex-row justify-content-between text-align-center">
-        <div class="d-flex flex-column">
-          <span className='current-bal' >Current Balance</span>
-          <p id="current-balance">&#36;0 <span class="text-white"></span></p>
+    <div className='profile-container' >
+    <div className="ui centered grid">
+    <div class="ui card">
+      <div class="content">
+        <h4 id="user-name" class="header">John Doe</h4>
+        <div class="description">
+          <p id="user-email">john.doe@example.com</p>
+          <p id="user-phone">123-456-7890</p>
+          <p id="user-occupation">Software Engineer</p>
+          <p id="user-location">San Francisco, CA</p>
+          <p id="account-type">Premium</p>
+          <p id="next-of-kin">Jane Doe</p>
+          <p id="next-of-kin-phone">987-654-3210</p>
         </div>
       </div>
-    </div>
-    <div class="card-bottom pt-3 px-3 mb-2">
-      <div class="d-flex flex-row justify-content-between text-align-center">
-        <div class="d-flex flex-column">
-          <span className='savings-bal' >  Savings Balance</span>
-          <p id="savings-balance">&#36;0 <span class="text-white"></span></p>
+      <div class="extra content">
+        <div class="ui two column grid">
+          <div class="column">
+            <p id='current-balance' > CURRENT BALANCE</p>
+          </div>
+          <div class="column">
+          <p id='savings-balance' > SAVINGS BALANCE</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+  
+  </div>
   );
 };
 
