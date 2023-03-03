@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "semantic-ui-react";
+import { Menu, Button} from "semantic-ui-react";
 import { Link } from "react-scroll";
 import '../../../App.css'
 import "semantic-ui-css/semantic.min.css";
@@ -65,7 +65,12 @@ function Header() {
         </Menu.Item>
       </Menu>
 
-      <button onClick={handleScrollToTop}>Scroll to top</button>
+      <Button
+      color="blue"
+      icon="arrow up"
+      onClick={handleScrollToTop}
+      style={{ position: "fixed", bottom: "20px", right: "20px" }}
+    />
     </div>
   );
 }
