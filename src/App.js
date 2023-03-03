@@ -15,7 +15,7 @@ import Header from "./components/landingPage/components/Header";
 
 const App = () => (
   <>
-    <Header />
+    {/* <Header /> */}
     <BrowserRouter>
       <Routes>
         <Route exact path="/home" element={<Landing />} />
