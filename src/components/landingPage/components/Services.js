@@ -39,7 +39,7 @@ const Services = () => {
               <Card.Content>
                 <Card.Header style={{ color: 'white' }}>Withdraw</Card.Header>
                 <Card.Description style={{ color: 'white' }}>
-                  We offer withdrawal services  which involves establishing a
+                  We offer withdrawal services  which involves the establishment of a
                   system  through which  members  can withdraw their funds or
                   savings from their accounts.
                 </Card.Description>

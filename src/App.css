@@ -111,6 +111,36 @@ a.navbar-brand .fos-brand {
   width: 100%;
 
 }
+.header {
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #c7c7c7;
+}
+
 .services-container{
   color: whitesmoke;
 }

@@ -51,6 +51,9 @@ const Signup = () => {
     })
     .catch(error => {
       console.error(error);
+
+      window.location.href = "../../dashboardPage/Dashboard";
+
     });
   };
 
