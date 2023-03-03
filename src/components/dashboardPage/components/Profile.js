@@ -8,35 +8,58 @@ import Savings from "./Savings"
 import WithdrawForm from "./Withdraw";
 
 const ProfileForm = () => {
+
+  
+  fetch("https://localhost:9292/users/123")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('user-name').textContent = data.name;
+      document.getElementById('user-email').textContent = data.email;
+      document.getElementById('user-phone').textContent = data.phone;
+      document.getElementById('user-occupation').textContent = data.occupation;
+      document.getElementById('user-location').textContent = data.location;
+      document.getElementById('account-type').textContent = data.accountType;
+      document.getElementById('next-of-kin').textContent = data.nextOfKin;
+      document.getElementById('next-of-kin-phone').textContent = data.nextOfKinPhone;
+      document.getElementById('current-balance').innerHTML = `&#36; ${data.currentBalance} <span class="text-white"></span>`;
+      document.getElementById('savings-balance').innerHTML = `&#36; ${data.savingsBalance} <span class="text-white"></span>`;
+    })
+    .catch(error => {
+      console.error("Error fetching data: ", error);
+    });
   return (
     <div class="container d-flex justify-content-center">
-      <div class="card p-3">
-        <h4 class="">Josiah Kamau</h4>
-        <div class="text-dark">
-          <p>business.josia@gmail.com</p>
-        </div>
-        <div class="card-bottom pt-3 px-3 mb-2">
-          <div class="d-flex flex-row justify-content-between text-align-center">
-            <div class="d-flex flex-column">
-              <span>Current Balance</span>
-              <p>
-                &#36; <span class="text-white">88,989</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card-bottom pt-3 px-3 mb-2">
-          <div class="d-flex flex-row justify-content-between text-align-center">
-            <div class="d-flex flex-column">
-              <span>Savings Balance</span>
-              <p>
-                &#36; <span class="text-white">100,000,989</span>
-              </p>
-            </div>
-          </div>
+  <div class="card p-3">
+    <h4 id="user-name">name</h4>
+    <div class="text-dark">
+      <p id="user-email">email</p>
+      <p id="user-phone">phone</p>
+      <p id="user-occupation">occupation</p>
+      <p id="user-location">location</p>
+      <p id="account-type">account-type</p>
+      <p id="next-of-kin">next of kin</p>
+      <p id="next-of-kin-phone">next of kin n.</p>
+    </div>
+    <br></br>
+    <div class="card-bottom pt-3 px-3 mb-2">
+      <div class="d-flex flex-row justify-content-between text-align-center">
+        <div class="d-flex flex-column">
+          <span>Current Balance</span>
+          <p id="current-balance">&#36; <span class="text-white"></span></p>
         </div>
       </div>
     </div>
+    <div class="card-bottom pt-3 px-3 mb-2">
+      <div class="d-flex flex-row justify-content-between text-align-center">
+        <div class="d-flex flex-column">
+          <span>Savings Balance</span>
+          <p id="savings-balance">&#36;0 <span class="text-white"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   );
 };
 
