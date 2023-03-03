@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
-import { Container, Form, Button } from "semantic-ui-react";
+import { Container, Card, Form, Button } from "semantic-ui-react";
 import Profile from "./Profile"
 import Deposit from "./Deposit"
 import Savings from "./Savings"
@@ -37,23 +37,27 @@ function WithdrawForm() {
 
   return (
     <Container id="withdraw-container">
-      <h1>Withdraw</h1>
-      <h3>Your current balance is: {balance}</h3>
-      <Form>
-        <Form.Field>
-          <label>Amount to withdraw</label>
-          <input
-            type="number"
-            placeholder="Enter amount to withdraw"
-            value={withdrawAmount}
-            onChange={(e) => setWithdrawAmount(e.target.value)}
-          />
-        </Form.Field>
-        <Button primary onClick={handleWithdraw}>
-          Withdraw
-        </Button>
-      </Form>
-    </Container>
+    <Card centered>
+      <Card.Content>
+        <Card.Header>Withdraw</Card.Header>
+        <Card.Description>
+          <h3>Your current balance is: {balance}</h3>
+          <Form>
+            <Form.Field>
+              <label>Amount to withdraw</label>
+              <input
+                type="number"
+                placeholder="Enter amount to withdraw"
+                value={withdrawAmount}
+                onChange={(e) => setWithdrawAmount(e.target.value)}
+              />
+            </Form.Field>
+            <Button primary onClick={handleWithdraw}>Withdraw</Button>
+          </Form>
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  </Container>
   );
 }
 

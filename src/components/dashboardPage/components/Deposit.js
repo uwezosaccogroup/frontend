@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
-import { Container, Form, Button } from "semantic-ui-react";
+import { Container, Card, Form, Button } from "semantic-ui-react";
 import NavBar from './NavBar';
 
 import ProfileForm from "./Profile"
@@ -29,23 +29,30 @@ const DepositForm = () => {
     // add logic to deposit the amount entered by the user
   };
   return (
-    
+  
     <Container id="deposit-container">
-    <h1>Deposit</h1>
-    <h3>Your current balance is: {balance}</h3>
-    <Form>
-      <Form.Field>
-        <label>Amount to deposit</label>
-        <input
-          type="number"
-          placeholder="Enter amount to deposit"
-          value={depositAmount}
-          onChange={(e) => setDepositAmount(e.target.value)}
-        />
-      </Form.Field>
-      <Button primary onClick={handleDeposit}>Deposit</Button>
-    </Form>
+    <Card centered>
+      <Card.Content>
+        <Card.Header>Deposit</Card.Header>
+        <Card.Description>
+          <h3>Your current balance is: {balance}</h3>
+          <Form>
+            <Form.Field>
+              <label>Amount to deposit</label>
+              <input
+                type="number"
+                placeholder="Enter amount to deposit"
+                value={depositAmount}
+                onChange={(e) => setDepositAmount(e.target.value)}
+              />
+            </Form.Field>
+            <Button primary onClick={handleDeposit}>Deposit</Button>
+          </Form>
+        </Card.Description>
+      </Card.Content>
+    </Card>
   </Container>
+  
   );
 };
 

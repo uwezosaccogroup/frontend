@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
-import { Input, Form, Button, Container } from "semantic-ui-react";
+import { Input, Form, Card, Button, Container } from "semantic-ui-react";
 import ProfileForm from "./Profile"
 import DepositForm from "./Deposit"
 import WithdrawForm from "./Withdraw";
@@ -40,29 +40,36 @@ const SavingsForm = ({ onTransfer }) => {
   };
 
   return (
-    <Container id="savings-container" >
-    <Form onSubmit={handleSubmit}>
-      <Form.Field>
-        <label>Current Balance: ${currentBalance}</label>
-      </Form.Field>
-      <Form.Field>
-        <label>Savings Balance: ${savingsBalance}</label>
-      </Form.Field>
-      <Form.Field>
-        <label>Transfer Amount</label>
-        <Input
-          type="number"
-          label="$"
-          labelPosition="left"
-          placeholder="Enter amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-          error={error}
-        />
-      </Form.Field>
-      <Button primary>Transfer to Savings</Button>
-    </Form>
-    </Container>
+    <Container id="savings-container">
+    <Card centered>
+      <Card.Content>
+        <Card.Header>Transfer to Savings</Card.Header>
+        <Card.Description>
+          <Form onSubmit={handleSubmit}>
+            <Form.Field>
+              <label>Current Balance: ${currentBalance}</label>
+            </Form.Field>
+            <Form.Field>
+              <label>Savings Balance: ${savingsBalance}</label>
+            </Form.Field>
+            <Form.Field>
+              <label>Transfer Amount</label>
+              <Input
+                type="number"
+                label="$"
+                labelPosition="left"
+                placeholder="Enter amount"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                error={error}
+              />
+            </Form.Field>
+            <Button primary>Transfer to Savings</Button>
+          </Form>
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  </Container>
   );
 };
 

@@ -72,10 +72,9 @@ a.navbar-brand .fos-brand {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
 }
 
 #deposit-container h1 {
@@ -114,10 +113,8 @@ a.navbar-brand .fos-brand {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 #withdraw-container h1 {
@@ -156,10 +153,8 @@ a.navbar-brand .fos-brand {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   }
   
   #savings-container h1 {
@@ -180,7 +175,7 @@ a.navbar-brand .fos-brand {
   }
   
   #savings-container input[type="number"] {
-  width: 100%;
+  width: 80%;
   max-width: 300px;
   padding: 10px;
   margin-bottom: 20px;
