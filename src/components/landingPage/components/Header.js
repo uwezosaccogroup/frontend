@@ -10,10 +10,10 @@ function Header() {
   };
 
   return (
-    <div className="header">
-      <Menu className="menu">
+    <div className="header"  >
+      <Menu className="menu" >
         <Menu.Item header>
-          Uwezo<span>Sacco</span>
+          UWEZO Sacco
         </Menu.Item>
 
         <Menu.Item>

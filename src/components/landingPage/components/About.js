@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="section1">
       <Container className="about-container">
-        <Header as="h1">About Us</Header>
+        <h1>About Us</h1>
         <Grid columns={2}>
           <Grid.Column>
             <p>
