@@ -223,12 +223,15 @@ span{
 
 .home-section .overlay {
   position: absolute;
-  top: 40%;
-  left: 30%;
-  letter-spacing: 1PX;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  padding: 1em;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.home-section .overlay h1{
+  font-size: 50px;
 }
 
 #section1{
@@ -255,7 +258,9 @@ span{
 }
 
 .menu {
+  background-color: transparent;
   color: #fff;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -270,8 +275,10 @@ span{
   transition: all 0.3s ease-in-out;
 }
 
+
+
 .menu a:hover {
-  color: #c7c7c7;
+  color: grey;
 }
 
 .services-container{

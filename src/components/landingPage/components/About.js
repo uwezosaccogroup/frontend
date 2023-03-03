@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Header, Container } from "semantic-ui-react";
+import { Grid, Container } from "semantic-ui-react";
 
 function About() {
   return (
