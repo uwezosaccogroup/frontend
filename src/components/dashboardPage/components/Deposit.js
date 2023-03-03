@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
+import { Container, Form, Button } from "semantic-ui-react";
 import NavBar from './NavBar';
 
 import Profile from "./Profile"
@@ -7,45 +8,44 @@ import Savings from "./Savings"
 import WithdrawForm from "./Withdraw";
 
 const DepositForm = () => {
+  const [balance, setBalance] = useState(0);
+  const [depositAmount, setDepositAmount] = useState(0);
+
+  useEffect(() => {
+    const fetchBalance = async () => {
+      try {
+        const response = await fetch("https://localhost:9292/users/balance");
+        const data = await response.json();
+        setBalance(data.balance);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchBalance();
+  }, []);
+
+  const handleDeposit = () => {
+    // add logic to deposit the amount entered by the user
+  };
   return (
     
-    <div class="container d-flex justify-content-center">
-      <div class="card p-3">
-        <h4 class="">Deposit Form</h4>
-        <div class="text-dark">
-          <p>
-            Current Balance <span> = &#36; 4,000</span>
-          </p>
-        </div>
-        <div class="card-bottom pt-3 px-3 mb-2">
-          <form class="d-flex flex-row justify-content-between text-align-center">
-            <div class="d-flex flex-column">
-              <label for="curramount" class="form-label">
-                Enter Amount
-              </label>
-              <p>
-                <span class="text-white">
-                  <input
-                    type="number"
-                    id="curramount"
-                    class="form-control"
-                    aria-describedby="amountDeposit"
-                    placeholder="$ 1,000"
-                  />
-                </span>
-                <div id="amountDeposit" class="form-text">
-                  Your amount must not be less than 1,000. This sacco will not
-                  tolerate poverty.
-                </div>
-              </p>
-            </div>
-            <button type="submit" class="btn btn-secondary submit">
-              <i class="fas fa-arrow-right text-white"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <Container id="deposit-container">
+    <h1>Deposit</h1>
+    <h3>Your current balance is: {balance}</h3>
+    <Form>
+      <Form.Field>
+        <label>Amount to deposit</label>
+        <input
+          type="number"
+          placeholder="Enter amount to deposit"
+          value={depositAmount}
+          onChange={(e) => setDepositAmount(e.target.value)}
+        />
+      </Form.Field>
+      <Button primary onClick={handleDeposit}>Deposit</Button>
+    </Form>
+  </Container>
   );
 };
 
