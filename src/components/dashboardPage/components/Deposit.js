@@ -1,7 +1,14 @@
 import React from "react";
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './NavBar';
 
-const Deposit = () => {
+import Profile from "./Profile"
+import Savings from "./Savings"
+import WithdrawForm from "./Withdraw";
+
+const DepositForm = () => {
   return (
+    
     <div class="container d-flex justify-content-center">
       <div class="card p-3">
         <h4 class="">Deposit Form</h4>
@@ -41,5 +48,19 @@ const Deposit = () => {
     </div>
   );
 };
+
+function Deposit() {
+  return (
+    <>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={< DepositForm/>} />
+        <Route exact path="/withdraw" element={<WithdrawForm />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/savings" element={<Savings />} />
+      </Routes>
+    </>
+  );
+}
 
 export default Deposit;

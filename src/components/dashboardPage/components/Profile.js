@@ -1,7 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Route, Routes } from 'react-router-dom';
 import React from "react";
+import NavBar from './NavBar';
 
-const Profile = () => {
+import DepositForm from "./Deposit"
+import Savings from "./Savings"
+import WithdrawForm from "./Withdraw";
+
+const ProfileForm = () => {
   return (
     <div class="container d-flex justify-content-center">
       <div class="card p-3">
@@ -33,5 +39,19 @@ const Profile = () => {
     </div>
   );
 };
+
+function Profile() {
+  return (
+    <>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={< ProfileForm/>} />
+        <Route exact path="/withdraw" element={<WithdrawForm />} />
+        <Route exact path="/deposit" element={<DepositForm />} />
+        <Route exact path="/savings" element={<Savings />} />
+      </Routes>
+    </>
+  );
+}
 
 export default Profile;

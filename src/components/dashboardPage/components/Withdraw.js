@@ -1,6 +1,11 @@
-import React from "react";
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './NavBar';
 
-const Withdraw = () => {
+import Profile from "./Profile"
+import Deposit from "./Deposit"
+import Savings from "./Savings"
+
+function WithdrawForm() {
   return (
     <div class="container d-flex justify-content-center">
       <div class="card p-3">
@@ -40,6 +45,20 @@ const Withdraw = () => {
       </div>
     </div>
   );
-};
+}
+
+function Withdraw() {
+  return (
+    <>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={< WithdrawForm/>} />
+        <Route exact path="/deposit" element={<Deposit />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/savings" element={<Savings />} />
+      </Routes>
+    </>
+  );
+}
 
 export default Withdraw;

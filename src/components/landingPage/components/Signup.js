@@ -64,7 +64,7 @@ const Signup = () => {
   ];
 
   return (
-    <Container id="section4" className="signup">
+    <Container id="section4" >
       <h1 className="signup-title">Sign Up</h1>
       <Segment>
         <Form onSubmit={handleSubmit}>
