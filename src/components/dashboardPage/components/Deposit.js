@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { Container, Form, Button } from "semantic-ui-react";
 import NavBar from './NavBar';
 
-import Profile from "./Profile"
-import Savings from "./Savings"
+import ProfileForm from "./Profile"
+import SavingsForm from "./Savings"
 import WithdrawForm from "./Withdraw";
 
 const DepositForm = () => {
@@ -56,8 +56,8 @@ function Deposit() {
       <Routes>
         <Route exact path="/" element={< DepositForm/>} />
         <Route exact path="/withdraw" element={<WithdrawForm />} />
-        <Route exact path="/profile" element={<Profile />} />
-        <Route exact path="/savings" element={<Savings />} />
+        <Route exact path="/profile" element={<ProfileForm />} />
+        <Route exact path="/savings" element={<SavingsForm />} />
       </Routes>
     </>
   );
