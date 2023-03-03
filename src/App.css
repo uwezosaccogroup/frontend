@@ -336,13 +336,18 @@ span{
 
 .footer-container {
   background-color: black ;
-  padding: 30px;
+  padding: 40px;
 
 }
 
 .footer-row {
   margin-bottom: 20px;
 }
+
+.footer-input {
+  background-color: transparent;
+}
+
 
 h4 {
   margin-bottom: 20px;

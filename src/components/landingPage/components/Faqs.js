@@ -17,6 +17,16 @@ const faqData = [
     content:
       "Yes, the app is secure. We use industry-standard encryption and security protocols to protect your data and prevent unauthorized access to your account.",
   },
+  {
+    title: "Is the app secure?",
+    content:
+      "Yes, the app is secure. We use industry-standard encryption and security protocols to protect your data and prevent unauthorized access to your account.",
+  },
+  {
+    title: "Is the app secure?",
+    content:
+      "Yes, the app is secure. We use industry-standard encryption and security protocols to protect your data and prevent unauthorized access to your account.",
+  },
 ];
 
 const Faqs = () => {
