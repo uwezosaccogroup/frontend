@@ -5,7 +5,7 @@ function Loader() {
   return (
     <div className="ring-container">
     <div className="ring">Loading
-        <span></span>
+        <span className="loader-span"></span>
     </div>
     </div>
   );

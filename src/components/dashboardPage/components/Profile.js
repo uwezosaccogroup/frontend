@@ -44,15 +44,15 @@ const ProfileForm = () => {
     <div class="card-bottom pt-3 px-3 mb-2">
       <div class="d-flex flex-row justify-content-between text-align-center">
         <div class="d-flex flex-column">
-          <span>Current Balance</span>
-          <p id="current-balance">&#36; <span class="text-white"></span></p>
+          <span className='current-bal' >Current Balance</span>
+          <p id="current-balance">&#36;0 <span class="text-white"></span></p>
         </div>
       </div>
     </div>
     <div class="card-bottom pt-3 px-3 mb-2">
       <div class="d-flex flex-row justify-content-between text-align-center">
         <div class="d-flex flex-column">
-          <span>Savings Balance</span>
+          <span className='savings-bal' >  Savings Balance</span>
           <p id="savings-balance">&#36;0 <span class="text-white"></span></p>
         </div>
       </div>

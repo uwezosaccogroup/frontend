@@ -410,7 +410,7 @@ h4 {
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
-span
+.loader-span
 {
   display:block;
   position:absolute;
@@ -422,7 +422,7 @@ span
   transform-origin:left;
   animation:animate 2s linear infinite;
 }
-span:before
+.loader-span:before
 {
   content:'';
   position:absolute;
