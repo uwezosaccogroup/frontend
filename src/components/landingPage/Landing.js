@@ -1,15 +1,15 @@
 import React from "react";
 import { Container } from "semantic-ui-react";
 import "../../App.css";
-import Header from "./Header";
-import Home from "./Home";
-import About from "./About";
-import Services from "./Services";
-import Faqs from "./Faqs";
-import SignUp from "./Signup";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Faqs from "./components/Faqs";
+import SignUp from "./components/Signup";
+import Footer from "./components/Footer";
 
-function App() {
+function Landing() {
   return (
     <div className="my-app">
       <Header />
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;

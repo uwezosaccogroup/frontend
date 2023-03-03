@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Container, Form, Grid, Segment, Dropdown } from "semantic-ui-react";
 
+import Dashboard from "../../dashboardPage/Dashboard";
+
 const Signup = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -41,9 +43,10 @@ const Signup = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // insert form data into database here
-    const endpoint = "https://localhost:9292/users/";
-    const formData = postData(formData, endpoint);
-    console.log(formData);
+    // const endpoint = "https://localhost:9292/users/";
+    // const formData = postData(formData, endpoint);
+    // console.log(formData);
+    console.log("fala");
   };
 
   const handleDropdownChange = (e, { value }) => {
@@ -147,7 +150,14 @@ const Signup = () => {
               required
             />
           </Form.Field>
-          <Form.Button primary>Submit</Form.Button>
+          {/* <Form.Button primary type="submit" onSubmit={handleSubmit} href="/">
+            Submit
+          </Form.Button> */}
+          <a href="/">
+            <button type="submit" className="btn btn-secondary submit">
+              Submit
+            </button>
+          </a>
         </Form>
       </Segment>
     </Container>

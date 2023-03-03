@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* THIS IS FOR THE DASHBOARD PAGE */
+
+.card {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 20%;
+}
+
+.fa-ellipsis-v {
+  font-size: 10px;
+  color: #c2c2c4;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.text-dark {
+  margin-top: 0px;
+}
+
+.text-dark p {
+  line-height: 16px;
+}
+.card-bottom {
+  background: #3e454d;
+  border-radius: 6px;
+}
+.flex-column {
+  color: #adb5bd;
+  font-size: 13px;
+}
+.flex-column p {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.btn-secondary {
+  height: 40px !important;
+  margin-top: 3px;
+}
+.btn-secondary:focus {
+  box-shadow: none;
+}
+a.navbar-brand {
+  margin-left: 25px;
+}
+#curramount {
+  width: 240px;
+}
+#amountDeposit {
+  font-size: 12px;
+}
+.submit {
+  width: 100px;
+  margin-top: 26px;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+a.navbar-brand .fos-brand {
+  font-size: 24px;
+}
+
+
+/* THIS IS FOR LANDING PAGE */
 .App {
   text-align: center;
 }
