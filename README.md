@@ -16,7 +16,7 @@ User can:\
 
  React\
  Bootstrap\
- Semantic UI\
+ Semantic UI
 
 ### Usage
 
