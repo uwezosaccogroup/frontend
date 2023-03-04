@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Grid,
@@ -8,8 +8,18 @@ import {
   TextArea,
   Button,
 } from "semantic-ui-react";
+import "../../../App.css"; // import your custom CSS file
 
 const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [feedback, setFeedback] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({name, email, feedback});
+  };
+
   return (
     <Container fluid className="footer-container">
       <Grid columns="equal" centered>
@@ -27,15 +37,33 @@ const Footer = () => {
         <Grid.Row className="footer-row">
           <Grid.Column textAlign="center">
             <h4>Send us your feedback</h4>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Field>
-                <Input placeholder="Name" required />
+                <Input
+                  placeholder="Name"
+                  required
+                  className="footer-input"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </Form.Field>
               <Form.Field>
-                <Input placeholder="Email" required />
+                <Input
+                  placeholder="Email"
+                  required
+                  className="footer-input"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </Form.Field>
               <Form.Field>
-                <TextArea placeholder="Your feedback" required />
+                <TextArea
+                  placeholder="Your feedback"
+                  required
+                  className="my-input"
+                  value={feedback}
+                  onChange={(e) => setFeedback(e.target.value)}
+                />
               </Form.Field>
               <Button type="submit" color="green">
                 Send

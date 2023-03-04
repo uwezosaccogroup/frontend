@@ -1,8 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* THIS IS FOR THE DASHBOARD PAGE */
+
+.card {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 20%;
+}
+
+.fa-ellipsis-v {
+  font-size: 10px;
+  color: #c2c2c4;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.text-dark {
+  margin-top: 0px;
+}
+
+.text-dark p {
+  line-height: 16px;
+}
+.card-bottom {
+  background: #3e454d;
+  border-radius: 6px;
+}
+.flex-column {
+  color: #adb5bd;
+  font-size: 13px;
+}
+.flex-column p {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.btn-secondary {
+  height: 40px !important;
+  margin-top: 3px;
+}
+.btn-secondary:focus {
+  box-shadow: none;
+}
+a.navbar-brand {
+  margin-left: 25px;
+}
+#curramount {
+  width: 240px;
+}
+#amountDeposit {
+  font-size: 12px;
+}
+.submit {
+  width: 100px;
+  margin-top: 26px;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+a.navbar-brand .fos-brand {
+  font-size: 24px;
+}
+
+#deposit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+
+}
+
+#deposit-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#deposit-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#deposit-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#deposit-container input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#deposit-container button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#withdraw-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+#withdraw-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#withdraw-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#withdraw-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#withdraw-container input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#withdraw-container button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#savings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  }
+  
+  #savings-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  }
+  
+  #savings-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  }
+
+  
+  #savings-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  #savings-container input[type="number"] {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  }
+  
+  #savings-container button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  }
+  .profile-container{
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+  .ui.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0.2, 0, 0.3);
+    padding: 2rem;
+  }
+  
+  .ui.card h4.header {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  
+  .ui.card p {
+    margin: 0.5rem 0;
+  }
+  
+  .ui.two.column.grid .column {
+    text-align: center;
+  }
+  
+  .ui.primary.button {
+    background-color: #2185d0;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .ui.button {
+    background-color: #fff;
+    color: #2185d0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  #current-balance,
+  #savings-balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #000;
+  }
+  
+
+
+/* THIS IS FOR LANDING PAGE */
 .App {
   text-align: center;
 }
 .my-app{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://free4kwallpapers.com/uploads/originals/2019/09/29/a-financial-district-wallpaper.jpg);
+  background-image: linear-gradient(rgba(0,0,0.9,9),rgba(0,0,0.9,0.9)),url(https://free4kwallpapers.com/uploads/originals/2019/09/29/a-financial-district-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;
@@ -10,21 +257,29 @@
 
 .home-section {
   position: relative;
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url('https://www.cdotrends.com/sites/default/files/iStock-1052990146.jpeg') no-repeat center center;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('https://www.cdotrends.com/sites/default/files/iStock-1052990146.jpeg') no-repeat center center;
   background-size: cover;
   width: 90%;
   margin-left: 60px;
-  height: 1000px;
+  height: 950px;
 
+}
+
+span{
+  color: #2596be;
 }
 
 .home-section .overlay {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  padding: 1em;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.home-section .overlay h1{
+  font-size: 50px;
 }
 
 #section1{
@@ -33,20 +288,60 @@
 }
 .about-container{
   
-  background-color: #fff;
+  background-color:transparent;
   padding: 50px;
-  color: black;
+  color: whitesmoke;
+  font-size: 18px;
   position: relative;
   width: 100%;
 
 }
+.header {
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.menu a:hover {
+  color: grey;
+}
+
 .services-container{
   color: whitesmoke;
 }
 
 .faq-section {
   max-width: 600px;
+  background-color: transparent;
   margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid white;
+
 }
 
 .faq-section h2 {
@@ -62,7 +357,7 @@
 
 .ui.accordion .title {
   font-size: 1.2rem;
-  color: #333;
+  color: black;
   background-color: #f7f7f7;
   padding: 1rem;
   border: 1px solid #e7e7e7;
@@ -74,26 +369,40 @@
 .ui.accordion .active.title {
   background-color: #fff;
 }
-
 .ui.accordion .content {
   font-size: 1.1rem;
-  color: #666;
+  color: #fff;
   padding: 1rem;
   border: 1px solid #e7e7e7;
   border-top: none;
   border-radius: 0 0 0.25rem 0.25rem;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .signup-title {
+    font-size: 2rem;
+  }
+  .ui.form input,
+  .ui.form select {
+    font-size: 1.2rem
+  }
 }
 
 .footer-container {
   background-color: black ;
-  padding: 30px;
+  padding: 40px;
 
 }
 
 .footer-row {
   margin-bottom: 20px;
 }
+
+.footer-input {
+  background-color: transparent;
+}
+
 
 h4 {
   margin-bottom: 20px;
@@ -105,5 +414,93 @@ h4 {
 @media only screen and (max-width: 767px) {
   .footer-row {
     margin-bottom: 0;
+  }
+}
+
+.ring-container
+{
+  margin:0;
+  padding:0;
+  background:#262626;
+}
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:black;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.loader-span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+.loader-span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
   }
 }

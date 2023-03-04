@@ -17,6 +17,16 @@ const faqData = [
     content:
       "Yes, the app is secure. We use industry-standard encryption and security protocols to protect your data and prevent unauthorized access to your account.",
   },
+  {
+    title: "What is a SACCO?",
+    content:
+      " A SACCO, or Savings and Credit Cooperative, is a member-owned financial cooperative that provides savings and credit services to its members. Members pool their resources to form a cooperative and collectively save and lend money among themselves.",
+  },
+  {
+    title: " How can I join a SACCO?",
+    content:
+      "To join a SACCO, you typically need to meet the eligibility requirements and complete an application form. You may also need to provide identification documents and other supporting materials. Contact our offices for more information on the specific requirements and application process.",
+  },
 ];
 
 const Faqs = () => {
