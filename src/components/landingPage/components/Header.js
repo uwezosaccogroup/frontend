@@ -13,12 +13,12 @@ function Header() {
     <div className="header"  >
       <Menu className="menu" >
         <Menu.Item header>
-          UWEZO Sacco
+          Uwezo Sacco Group
         </Menu.Item>
 
         <Menu.Item>
           <Link
-            to="section1"
+            to="about"
             smooth={true}
             duration={200}
             spy={true}
@@ -30,7 +30,7 @@ function Header() {
 
         <Menu.Item>
           <Link
-            to="section2"
+            to="services"
             smooth={true}
             duration={150}
             spy={true}
@@ -42,7 +42,7 @@ function Header() {
 
         <Menu.Item>
           <Link
-            to="section3"
+            to="faqs"
             smooth={true}
             duration={200}
             spy={true}
@@ -54,7 +54,7 @@ function Header() {
 
         <Menu.Item>
           <Link
-            to="section4"
+            to="signup"
             smooth={true}
             duration={200}
             spy={true}
