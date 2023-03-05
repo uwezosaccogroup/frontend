@@ -13,7 +13,9 @@ function WithdrawForm() {
   useEffect(() => {
     const fetchBalance = async () => {
       try {
-        const response = await fetch("https://localhost:9292/users/balance");
+        const response = await fetch(
+          "https://uwezosacco.up.railway.app/users/balance"
+        );
         const data = await response.json();
         setBalance(data.balance);
       } catch (error) {

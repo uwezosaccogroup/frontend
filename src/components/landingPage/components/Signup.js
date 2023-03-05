@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Container, Form, Grid, Segment, Dropdown ,Button} from "semantic-ui-react";
 
-// import Dashboard from "../../dashboardPage/Dashboard";
-
 const Signup = () => {
   const [formData, setFormData] = useState({
     name: "",

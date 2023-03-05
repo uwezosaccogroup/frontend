@@ -10,21 +10,26 @@ import WithdrawForm from "./Withdraw";
 const ProfileForm = () => {
 
   
-  fetch("https://localhost:9292/users/123")
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('user-name').textContent = data.name;
-      document.getElementById('user-email').textContent = data.email;
-      document.getElementById('user-phone').textContent = data.phone;
-      document.getElementById('user-occupation').textContent = data.occupation;
-      document.getElementById('user-location').textContent = data.location;
-      document.getElementById('account-type').textContent = data.accountType;
-      document.getElementById('next-of-kin').textContent = data.nextOfKin;
-      document.getElementById('next-of-kin-phone').textContent = data.nextOfKinPhone;
-      document.getElementById('current-balance').innerHTML = `&#36; ${data.currentBalance} <span class="text-black"></span>`;
-      document.getElementById('savings-balance').innerHTML = `&#36; ${data.savingsBalance} <span class="text-black"></span>`;
+  fetch("https://uwezosacco.up.railway.app/users/123")
+    .then((response) => response.json())
+    .then((data) => {
+      document.getElementById("user-name").textContent = data.name;
+      document.getElementById("user-email").textContent = data.email;
+      document.getElementById("user-phone").textContent = data.phone;
+      document.getElementById("user-occupation").textContent = data.occupation;
+      document.getElementById("user-location").textContent = data.location;
+      document.getElementById("account-type").textContent = data.accountType;
+      document.getElementById("next-of-kin").textContent = data.nextOfKin;
+      document.getElementById("next-of-kin-phone").textContent =
+        data.nextOfKinPhone;
+      document.getElementById(
+        "current-balance"
+      ).innerHTML = `&#36; ${data.currentBalance} <span class="text-black"></span>`;
+      document.getElementById(
+        "savings-balance"
+      ).innerHTML = `&#36; ${data.savingsBalance} <span class="text-black"></span>`;
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error fetching data: ", error);
     });
   return (

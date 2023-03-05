@@ -29,19 +29,19 @@ function Landing() {
         <>
           <Home />
 
-          <Container id="section1" text style={{ marginTop: "17em" }}>
+          <Container id="about" text style={{ marginTop: "17em" }}>
             <About />
           </Container>
 
-          <Container id="section2" text style={{ marginTop: "17em" }}>
+          <Container id="services" text style={{ marginTop: "17em" }}>
             <Services />
           </Container>
 
-          <Container id="section3" text style={{ marginTop: "17em" }}>
+          <Container id="faqs" text style={{ marginTop: "17em" }}>
             <Faqs />
           </Container>
 
-          <Container id="section4" text style={{ marginTop: "17em" }}>
+          <Container id="signup" text style={{ marginTop: "17em" }}>
             <SignUp />
           </Container>
 
