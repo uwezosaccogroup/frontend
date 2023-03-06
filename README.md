@@ -5,7 +5,7 @@ This repository contains the frontend code for the Uwezo Sacco web application. 
 
 ### Getting Started
 
-To get started with the Uwezo Sacco web application, you can visit the live application at https://uwezosacco.netlify.app/. Alternatively, you can follow the steps below to set up the application locally:
+To get started with the frontend code, you can follow the steps below:
 
 1. Clone the repository to your local machine:
 ```bash
@@ -14,7 +14,7 @@ git clone https://github.com/uwezosaccogroup/frontend.git
 
 2. Navigate to the project directory:
 ```bash
-cd web-application
+cd frontend
 ```
 
 3. Install the dependencies:
