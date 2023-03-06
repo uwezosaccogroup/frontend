@@ -9,7 +9,7 @@ To get started with the Uwezo Sacco web application, you can visit the live appl
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/uwezosacco/web-application.git
+git clone https://github.com/uwezosaccogroup/frontend.git
 ```
 
 2. Navigate to the project directory:
