@@ -32,12 +32,18 @@ const ProfileForm = () => {
           <Card.Content>
             <Card.Header style={{color: 'white'}}>{userData.name}</Card.Header>
             <Card.Meta style={{color: 'white'}} >Email:{userData.email}</Card.Meta>
+            <br></br>
             <Card.Description style={{ color: 'white' }}>
               <p>Phone: {userData.phone}</p>
+              <br></br>
               <p>Location: {userData.location}</p>
+              <br></br>
               <p>Occupation: {userData.occupation}</p>
+               <br></br>
               <p>Account Type: {userData.account_type}</p>
+              <br></br>
               <p>Next of Kin: {userData.next_of_kin}</p>
+              <br></br>
               <p>Next of Kin Phone: {userData.next_of_kin_phone}</p>
             </Card.Description>
           </Card.Content>
