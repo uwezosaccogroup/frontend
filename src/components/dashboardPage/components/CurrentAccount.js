@@ -21,7 +21,6 @@ return (
 <div className='current-account-container'>
 <Card>
 <Card.Content>
-<Card.Header>Current Account</Card.Header>
 <Card.Description>
 <p style={{ color: 'black' }}>Account Number: {currentData.account_number}</p>
 <p style={{ color: 'black' }}>Date of Transaction: {currentData.date_of_transaction}</p>

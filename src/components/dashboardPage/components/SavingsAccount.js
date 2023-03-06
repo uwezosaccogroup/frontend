@@ -21,7 +21,6 @@ function SavingsAccount() {
     <div className='savings-account-container'>
       <Card>
         <Card.Content>
-          <Card.Header>Savings Account</Card.Header>
           <Card.Description>
             <p style={{ color: 'black' }}>Account Number: {savingsData.account_number}</p>
             <p style={{ color: 'black' }}>Date of Transaction: {savingsData.date_of_transaction}</p>
