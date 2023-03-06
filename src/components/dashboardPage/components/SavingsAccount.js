@@ -23,13 +23,21 @@ function SavingsAccount() {
     const newBalance = parseInt(savingsData.balance) + parseInt(depositAmount);
     setSavingsData({ ...savingsData, balance: newBalance });
     setDepositAmount(0);
+    window.alert(`Deposit of ${depositAmount} successful!`);
   };
+  
 
   const handleWithdraw = () => {
     const newBalance = parseInt(savingsData.balance) - parseInt(withdrawAmount);
-    setSavingsData({ ...savingsData, balance: newBalance });
-    setWithdrawAmount(0);
-  };
+    if (newBalance < 0) {
+      alert('Insufficient funds enter a lower amount');
+    } else {
+      setSavingsData({ ...savingsData, balance: newBalance });
+      setWithdrawAmount(0);
+      alert('Withdrawal successful');
+    }
+};
+
 
   return (
     <div className='savings-account-container'>

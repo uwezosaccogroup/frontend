@@ -23,13 +23,20 @@ function CurrentAccount() {
     const newBalance = parseInt(currentData.balance) + parseInt(depositAmount);
     setCurrentData({ ...currentData, balance: newBalance });
     setDepositAmount(0);
+    window.alert(`Deposit of ${depositAmount} successful!`);
   };
+  
 
   const handleWithdraw = () => {
     const newBalance = parseInt(currentData.balance) - parseInt(withdrawAmount);
-    setCurrentData({ ...currentData, balance: newBalance });
-    setWithdrawAmount(0);
-  };
+    if (newBalance < 0) {
+      alert('Insufficient funds enter a lower amount');
+    } else {
+      setCurrentData({ ...currentData, balance: newBalance });
+      setWithdrawAmount(0);
+      alert('Withdrawal successful');
+    }
+};
 
   return (
     <div className='current-account-container'>
