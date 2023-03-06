@@ -3,9 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import NavBar from './NavBar';
 import axios from 'axios';
-import DepositForm from './Deposit';
 import Savings from './Savings';
-import WithdrawForm from './Withdraw';
 import { Card } from 'semantic-ui-react';
 import SavingsAccount from './SavingsAccount';
 import CurrentAccount from './CurrentAccount';
@@ -74,8 +72,8 @@ function Profile() {
       <NavBar />
       <Routes>
         <Route exact path='/' element={<ProfileForm />} />
-        <Route exact path='/withdraw' element={<WithdrawForm />} />
-        <Route exact path='/deposit' element={<DepositForm />} />
+        {/* <Route exact path='/withdraw' element={<WithdrawForm />} />
+        <Route exact path='/deposit' element={<DepositForm />} /> */}
         <Route exact path='/savings' element={<Savings />} />
       </Routes>
     </>

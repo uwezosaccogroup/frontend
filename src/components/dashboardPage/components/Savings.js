@@ -3,8 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
 import { Input, Form, Card, Button, Container } from "semantic-ui-react";
 import ProfileForm from "./Profile"
-import DepositForm from "./Deposit"
-import WithdrawForm from "./Withdraw";
 
 
 const SavingsForm = ({ onTransfer }) => {
@@ -82,9 +80,7 @@ function Savings() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<SavingsForm />} />
-        <Route exact path="/deposit" element={<DepositForm />} />
         <Route exact path="/profile" element={<ProfileForm />} />
-        <Route exact path="/withdraw" element={<WithdrawForm />} />
       </Routes>
     </>
   );

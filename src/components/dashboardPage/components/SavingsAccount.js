@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card } from 'semantic-ui-react';
+import { Card, Form, Button } from 'semantic-ui-react';
 
 function SavingsAccount() {
   const [savingsData, setSavingsData] = useState({});
+  const [depositAmount, setDepositAmount] = useState(0);
+  const [withdrawAmount, setWithdrawAmount] = useState(0);
 
   useEffect(() => {
     axios
@@ -17,6 +19,18 @@ function SavingsAccount() {
       });
   }, []);
 
+  const handleDeposit = () => {
+    const newBalance = parseInt(savingsData.balance) + parseInt(depositAmount);
+    setSavingsData({ ...savingsData, balance: newBalance });
+    setDepositAmount(0);
+  };
+
+  const handleWithdraw = () => {
+    const newBalance = parseInt(savingsData.balance) - parseInt(withdrawAmount);
+    setSavingsData({ ...savingsData, balance: newBalance });
+    setWithdrawAmount(0);
+  };
+
   return (
     <div className='savings-account-container'>
       <Card>
@@ -27,9 +41,34 @@ function SavingsAccount() {
             <p style={{ color: 'black' }}>Balance: {savingsData.balance}</p>
           </Card.Description>
         </Card.Content>
+        <Card.Content extra>
+          <Form>
+            <Form.Field>
+              <label>Deposit Amount</label>
+              <input
+                type='number'
+                placeholder='Enter amount'
+                value={depositAmount}
+                onChange={(e) => setDepositAmount(Number(e.target.value))}
+              />
+            </Form.Field>
+            <Form.Field>
+              <label>Withdraw Amount</label>
+              <input
+                type='number'
+                placeholder='Enter amount'
+                value={withdrawAmount}
+                onChange={(e) => setWithdrawAmount(Number(e.target.value))}
+              />
+            </Form.Field>
+            <Button type='button' onClick={handleDeposit}>Deposit</Button>
+            <Button type='button' onClick={handleWithdraw}>Withdraw</Button>
+          </Form>
+        </Card.Content>
       </Card>
     </div>
   );
+  
 }
 
 export default SavingsAccount;
