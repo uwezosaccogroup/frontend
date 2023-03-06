@@ -1,79 +1,61 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import React from "react";
+import React from 'react';
 import NavBar from './NavBar';
-
-import DepositForm from "./Deposit"
-import Savings from "./Savings"
-import WithdrawForm from "./Withdraw";
+import axios from 'axios';
+import DepositForm from './Deposit';
+import Savings from './Savings';
+import WithdrawForm from './Withdraw';
+import { Card } from 'semantic-ui-react';
+// import SavingsAccount from './SavingsAccount';
 
 const ProfileForm = () => {
+  const [userData, setUserData] = useState({});
 
-  
-  fetch("https://uwezosacco.up.railway.app/users/123")
-    .then((response) => response.json())
-    .then((data) => {
-      document.getElementById("user-name").textContent = data.name;
-      document.getElementById("user-email").textContent = data.email;
-      document.getElementById("user-phone").textContent = data.phone;
-      document.getElementById("user-occupation").textContent = data.occupation;
-      document.getElementById("user-location").textContent = data.location;
-      document.getElementById("account-type").textContent = data.accountType;
-      document.getElementById("next-of-kin").textContent = data.nextOfKin;
-      document.getElementById("next-of-kin-phone").textContent =
-        data.nextOfKinPhone;
-      document.getElementById(
-        "current-balance"
-      ).innerHTML = `&#36; ${data.currentBalance} <span class="text-black"></span>`;
-      document.getElementById(
-        "savings-balance"
-      ).innerHTML = `&#36; ${data.savingsBalance} <span class="text-black"></span>`;
-    })
-    .catch((error) => {
-      console.error("Error fetching data: ", error);
-    });
+  useEffect(() => {
+    axios
+      .get('https://uwezosacco.up.railway.app/')
+      .then((response) => {
+        const lastUser = response.data[response.data.length - 1];
+        setUserData(lastUser);
+      })
+      .catch((error) => {
+        console.error('Error fetching data: ', error);
+      });
+  }, []);
+
   return (
-    <div className='profile-container' >
-    <div className="ui centered grid">
-    <div class="ui card">
-      <div class="content">
-        <h4 id="user-name" class="header">John Doe</h4>
-        <div class="description">
-          <p id="user-email">john.doe@example.com</p>
-          <p id="user-phone">123-456-7890</p>
-          <p id="user-occupation">Software Engineer</p>
-          <p id="user-location">San Francisco, CA</p>
-          <p id="account-type">Premium</p>
-          <p id="next-of-kin">Jane Doe</p>
-          <p id="next-of-kin-phone">987-654-3210</p>
-        </div>
-      </div>
-      <div class="extra content">
-        <div class="ui two column grid">
-          <div class="column">
-            <p id='current-balance' > CURRENT BALANCE</p>
-          </div>
-          <div class="column">
-          <p id='savings-balance' > SAVINGS BALANCE</p>
-          </div>
-        </div>
-      </div>
+    <div className='profile-container'>
+      <Card>
+        <Card.Content>
+          <Card.Header>{userData.name}</Card.Header>
+          <Card.Meta style={{ color: 'black' }} >{userData.email}</Card.Meta>
+          <Card.Description>
+            <p style={{ color: 'black' }} >Phone: {userData.phone}</p>
+            <p style={{ color: 'black' }} >Location: {userData.location}</p>
+            <p style={{ color: 'black' }} >Occupation: {userData.occupation}</p>
+            <p style={{ color: 'black' }} >Account Type: {userData.account_type}</p>
+            <p style={{ color: 'black' }} >Next of Kin: {userData.next_of_kin}</p>
+            <p style={{ color: 'black' }} >Next of Kin Phone: {userData.next_of_kin_phone}</p>
+            <p style={{ color: 'black' }} >Current Balance: {userData.SavingsAccount}</p>
+            <p style={{ color: 'black' }} >Savings Balance: {userData.savingsBalance}</p>
+          </Card.Description>
+        </Card.Content>
+      </Card>
     </div>
-  </div>
-  
-  </div>
   );
 };
+
 
 function Profile() {
   return (
     <>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={< ProfileForm/>} />
-        <Route exact path="/withdraw" element={<WithdrawForm />} />
-        <Route exact path="/deposit" element={<DepositForm />} />
-        <Route exact path="/savings" element={<Savings />} />
+        <Route exact path='/' element={<ProfileForm />} />
+        <Route exact path='/withdraw' element={<WithdrawForm />} />
+        <Route exact path='/deposit' element={<DepositForm />} />
+        <Route exact path='/savings' element={<Savings />} />
       </Routes>
     </>
   );

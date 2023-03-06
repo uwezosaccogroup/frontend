@@ -189,11 +189,14 @@ a.navbar-brand .fos-brand {
   padding: 10px 20px;
   border-radius: 5px;
   }
-  .profile-container{
-    margin-top: 50px;
+  .profile-container {
+    background-color: black;
+    color: white;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  
   .ui.card {
     background-color: #fff;
     border-radius: 0.5rem;
