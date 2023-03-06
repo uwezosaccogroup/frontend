@@ -26,36 +26,36 @@ const ProfileForm = () => {
   }, []);
 
   return (
-    <div className='profile-container'>
+    <div className='profile-container' style={{ backgroundColor: 'black', color: 'white' }}>
       <Card.Group>
-        <Card>
+        <Card style={{ backgroundColor: 'black', color: 'white' }}>
           <Card.Content>
-            <Card.Header>{userData.name}</Card.Header>
-            <Card.Meta style={{ color: 'black' }}>Email:{userData.email}</Card.Meta>
-            <Card.Description>
-              <p style={{ color: 'black' }}>Phone: {userData.phone}</p>
-              <p style={{ color: 'black' }}>Location: {userData.location}</p>
-              <p style={{ color: 'black' }}>Occupation: {userData.occupation}</p>
-              <p style={{ color: 'black' }}>Account Type: {userData.account_type}</p>
-              <p style={{ color: 'black' }}>Next of Kin: {userData.next_of_kin}</p>
-              <p style={{ color: 'black' }}>Next of Kin Phone: {userData.next_of_kin_phone}</p>
+            <Card.Header style={{color: 'white'}}>{userData.name}</Card.Header>
+            <Card.Meta style={{color: 'white'}} >Email:{userData.email}</Card.Meta>
+            <Card.Description style={{ color: 'white' }}>
+              <p>Phone: {userData.phone}</p>
+              <p>Location: {userData.location}</p>
+              <p>Occupation: {userData.occupation}</p>
+              <p>Account Type: {userData.account_type}</p>
+              <p>Next of Kin: {userData.next_of_kin}</p>
+              <p>Next of Kin Phone: {userData.next_of_kin_phone}</p>
             </Card.Description>
           </Card.Content>
         </Card>
         {hasCurrentAccount ? (
-          <Card>
+          <Card style={{ backgroundColor: 'black', color: 'white' }}>
             <Card.Content>
-              <Card.Header>Current Account</Card.Header>
-              <Card.Description>
+              <Card.Header style={{color: 'white'}} >Current Account</Card.Header>
+              <Card.Description style={{ color: 'white' }}>
                 <CurrentAccount />
               </Card.Description>
             </Card.Content>
           </Card>
         ) : (
-          <Card>
+          <Card style={{ backgroundColor: 'black', color: 'white' }}>
             <Card.Content>
-              <Card.Header>Savings Account</Card.Header>
-              <Card.Description>
+              <Card.Header style={{color: 'white'}} >Savings Account</Card.Header>
+              <Card.Description style={{ color: 'white' }}>
                 <SavingsAccount />
               </Card.Description>
             </Card.Content>
@@ -64,6 +64,7 @@ const ProfileForm = () => {
       </Card.Group>
     </div>
   );
+  
 };
 
 function Profile() {

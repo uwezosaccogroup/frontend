@@ -190,7 +190,9 @@ a.navbar-brand .fos-brand {
   border-radius: 5px;
   }
   .profile-container {
-    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0.9,9),rgba(0,0,0.9,0.5)),url(https://free4kwallpapers.com/uploads/originals/2019/09/29/a-financial-district-wallpaper.jpg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
     color: white;
     display: flex;
     justify-content: center;
