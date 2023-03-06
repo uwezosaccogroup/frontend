@@ -33,7 +33,7 @@ const ProfileForm = () => {
         <Card>
           <Card.Content>
             <Card.Header>{userData.name}</Card.Header>
-            <Card.Meta style={{ color: 'black' }}>{userData.email}</Card.Meta>
+            <Card.Meta style={{ color: 'black' }}>Email:{userData.email}</Card.Meta>
             <Card.Description>
               <p style={{ color: 'black' }}>Phone: {userData.phone}</p>
               <p style={{ color: 'black' }}>Location: {userData.location}</p>
